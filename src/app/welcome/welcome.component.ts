@@ -1,5 +1,4 @@
 import { Component, OnInit } from '@angular/core';
-
 @Component({
   selector: 'app-welcome',
   templateUrl: './welcome.component.html',
@@ -7,7 +6,17 @@ import { Component, OnInit } from '@angular/core';
 })
 export class WelcomeComponent implements OnInit {
 
-  constructor() { }
+  backdrop : string;
+  title : string;
+  width : Number;
+  height : Number;
+
+  constructor() {
+    this.title="Dr. Regis Trust";
+    this.backdrop="assets/IntroBG.jpg";
+    this.width = 3840;
+    this.height = 2160;
+  }
 
   ngOnInit(): void {
   }

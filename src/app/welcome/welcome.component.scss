@@ -1,0 +1,17 @@
+@use 'sass:map';
+$height: 45rem;
+.divBG {
+    background-size: cover;
+    height: $height;
+}
+
+.mainTitle {
+    text-align: center;
+    vertical-align: middle;
+    font-size: $height/3;
+    color: rgb(255, 115, 91);
+}
+
+.titleContainer {
+    padding-top: $height/3 - 4rem;
+}
