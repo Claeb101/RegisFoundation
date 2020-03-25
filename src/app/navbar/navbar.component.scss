@@ -1,0 +1,14 @@
+@import 'src/styles.scss';
+
+.navItem {
+    color: $mainColor;
+}
+
+#navLogo {
+    max-width: 40px;
+    height: auto;
+}
+
+#mainNavTitle {
+    padding-left: 1rem;
+}

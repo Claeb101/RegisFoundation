@@ -7,11 +7,20 @@ import { NavPart} from './navPart';
   styleUrls: ['./navbar.component.scss']
 })
 export class NavbarComponent implements OnInit {
-  links : Array<NavPart>;
+  mainTitle : String;
+  navBarParts : Array<NavPart>;
+  logoSrc : String;
   constructor() {
-    let ar : NavPart[] = new Array<NavPart>();
-    // push parts to ar
-    this.links = ar;
+    let ar : NavPart[] = [
+      {link: "/donate", display: "Donate"},
+      {link: "/about", display: "About"},
+      {link: "/help", display: "Help"},
+    ];
+    this.navBarParts = ar;
+
+    this.logoSrc = "assets/TrustIcon.png";
+
+    this.mainTitle = "Dr. Regis Trust"
   }
 
   ngOnInit(): void {

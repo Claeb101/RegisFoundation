@@ -1,1 +1,12 @@
-<p>navbar works!</p>
+<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <a class="navbar-brand" href="/home">
+      <img id="navLogo" src={{logoSrc}} alt="">
+      <span class="navbar-text" id="mainNavTitle" style="color: rgb(255, 115, 91);">{{mainTitle}}</span>
+    </a>
+    
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item" *ngFor="let nav of navBarParts">
+        <a class="nav-link" href={{nav.link}} style="color: rgb(255, 115, 91);">{{nav.display}}</a>
+      </li>
+    </ul>
+  </nav>

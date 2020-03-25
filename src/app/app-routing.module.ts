@@ -1,8 +1,18 @@
+import { AboutComponent } from './about/about.component';
+import { HelpComponent } from './help/help.component';
+import { DonateComponent } from './donate/donate.component';
+import { HomeComponent } from './home/home.component';
 import { NgModule } from '@angular/core';
-import { Routes, RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 
 
-const routes: Routes = [];
+const routes: Routes = [
+  { path: 'home', component: HomeComponent},
+  { path: 'donate', component: DonateComponent},
+  { path: 'about', component: AboutComponent},
+  { path: 'help', component: HelpComponent},
+  { path: '**', redirectTo: 'home' }
+];
 
 @NgModule({
   imports: [RouterModule.forRoot(routes)],
