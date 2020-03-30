@@ -1,0 +1,61 @@
+@import 'src/styles.scss';
+
+.footer {
+  background-color: slategray;
+}
+
+.icon-row {
+  padding: 0.651vw;
+}
+
+.icon-holder {
+  margin: 0.326vw
+;
+}
+
+
+
+// Optional outline style, remove btn-rounded to get square unrounded icons
+.btn-outline-facebook {
+  border: 0.0651vw solid #3b579d;
+  color: #3b579d
+}
+
+.btn-outline-facebook:hover {
+  background: #3b579d;
+  color: #ffffff
+}
+
+// Using the classes below
+.btn.btn-rounded {
+  border-radius: 3.255vw
+}
+
+.btn.btn-social-icon {
+  width: 3.255vw;
+  height: 3.255vw;
+  padding: 0
+}
+
+// Make new this for new icon type
+.btn-facebook {
+  background: #3b579d;
+  color: #ffffff
+}
+
+.btn-facebook:hover,
+.btn-facebook:focus {
+  background: #2d4278;
+  color: #ffffff
+}
+
+.btn-twitter {
+  background: #2caae1;
+  color: #ffffff
+}
+
+.btn-twitter:hover,
+.btn-twitter:focus {
+    background: #1b8dbf;
+    color: #ffffff
+}

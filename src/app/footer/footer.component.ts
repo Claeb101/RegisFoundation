@@ -1,3 +1,4 @@
+import { SocialIcon } from './social_icon';
 import { Component, OnInit } from '@angular/core';
 
 @Component({
@@ -6,8 +7,13 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
-
-  constructor() { }
+  icons : SocialIcon[];
+  constructor() {
+    this.icons = [
+      {iconClassName: "facebook", link: "https://www.facebook.com/"}, 
+      {iconClassName: "twitter", link: "https://www.twitter.com/"}, 
+    ]
+  }
 
   ngOnInit(): void {
   }

@@ -10,6 +10,7 @@ import { HelpComponent } from './help/help.component';
 import { AboutComponent } from './about/about.component';
 import { DonateComponent } from './donate/donate.component';
 import { FooterComponent } from './footer/footer.component';
+import { LeadershipComponent } from './leadership/leadership.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { FooterComponent } from './footer/footer.component';
     HelpComponent,
     AboutComponent,
     DonateComponent,
-    FooterComponent
+    FooterComponent,
+    LeadershipComponent
   ],
   imports: [
     BrowserModule,

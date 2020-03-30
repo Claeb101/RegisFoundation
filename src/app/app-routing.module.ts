@@ -1,3 +1,4 @@
+import { LeadershipComponent } from './leadership/leadership.component';
 import { AboutComponent } from './about/about.component';
 import { HelpComponent } from './help/help.component';
 import { DonateComponent } from './donate/donate.component';
@@ -11,6 +12,7 @@ const routes: Routes = [
   { path: 'donate', component: DonateComponent},
   { path: 'about', component: AboutComponent},
   { path: 'help', component: HelpComponent},
+  { path: 'leadership', component: LeadershipComponent},
   { path: '**', redirectTo: 'home' }
 ];
 

@@ -1,0 +1,24 @@
+<app-navbar></app-navbar>
+<section class="bg container-fluid">
+    <div class="row">
+        <div class="col-12">
+            <h1 class="mainTitle display-1 text-center">{{title}}</h1>
+        </div>
+    </div>
+</section>
+<section class="bg container-fluid">
+    <div class="row">
+        <div *ngFor="let trustee of trustees" class="col-md-4 col-sm-12">
+            <div class="member-card">
+                <div class="pfp">
+                    <img src={{trustee.image_path}} alt="team member" class="image">
+                </div>
+                <div class="content">
+                    <h5>Martin Smith</h5>
+                    <span>founder & ceo</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<app-footer></app-footer>

@@ -1,1 +1,12 @@
-<p>footer works!</p>
+<section class="container-fluid footer">
+    <div class="row text-center icon-row">
+        <div class="col-12">
+            <a *ngFor="let icon of icons" href={{icon.link}} target="_blank">
+                <button type="button" [ngClass]="'btn btn-social-icon btn-' + icon.iconClassName + ' btn-rounded icon-holder'"><i [ngClass]="'fa fa-' + icon.iconClassName"></i></button>
+            </a>
+        </div>
+    </div>
+</section>
+
+
+

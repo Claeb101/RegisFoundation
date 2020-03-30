@@ -1,3 +1,4 @@
+import { Globals } from './../../globals';
 import { Component, OnInit } from '@angular/core';
 @Component({
   selector: 'app-welcome',
@@ -12,7 +13,7 @@ export class WelcomeComponent implements OnInit {
   height : Number;
 
   constructor() {
-    this.title="Dr. Regis Trust";
+    this.title= Globals.mainTitle;
     this.backdrop="assets/IntroBG.jpg";
     this.width = 3840;
     this.height = 2160;

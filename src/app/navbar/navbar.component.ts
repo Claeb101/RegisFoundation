@@ -1,3 +1,4 @@
+import { Globals } from './../globals';
 import { Component, OnInit } from '@angular/core';
 import { NavPart} from './navPart';
 
@@ -14,13 +15,14 @@ export class NavbarComponent implements OnInit {
     let ar : NavPart[] = [
       {link: "/donate", display: "Donate"},
       {link: "/about", display: "About"},
+      {link: "/leadership", display: "Leadership"},
       {link: "/help", display: "Help"},
     ];
     this.navBarParts = ar;
 
     this.logoSrc = "assets/TrustIcon.png";
 
-    this.mainTitle = "Dr. Regis Trust"
+    this.mainTitle = Globals.mainTitle;
   }
 
   ngOnInit(): void {
