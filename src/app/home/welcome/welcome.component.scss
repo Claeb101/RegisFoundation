@@ -1,16 +1,32 @@
 @import 'src/styles.scss';
 
-$height: 37.083vw;
-.divBG {
-    background-size: cover;
-    height: $height;
-    opacity: 0.8;
+.section-container {
+    overflow: hidden;
+    padding: 0%;
 }
 
 .mainTitle {
-    color:$mainColor;
+    color: $mainColor;
 }
 
-#mainContent {
-    padding-top: 10.4167vw;
+.landing-image {
+    width: 100%;
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+    z-index: -1;
+}
+
+.image-holder {
+    position: relative;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    height: 45vw;
+    width: 100%;
 }

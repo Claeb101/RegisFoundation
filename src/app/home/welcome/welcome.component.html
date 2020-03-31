@@ -1,22 +1,6 @@
-<section class="divBG container-fluid" [ngStyle]="{'background-image': 'url(' + backdrop + ')'}">
-    <div class="container" id="mainContent">
-        <div class="row">
-            <div class="col-12">
-                <h1 class="mainTitle display-1 text-center">{{title}}</h1>
-            </div>
-        </div>
-        <div class="row" id="buttonRow">
-            <div class="col-4 offset-2 text-right">
-                <a href="/donate">
-                    <button type="button" class="btn btn-primary">Donate Now</button>
-                </a>
-            </div>
-
-            <div class="col-4 text-left">
-                <a href="/About">
-                    <button type="button" class="btn btn-primary">Learn More</button>
-                </a>
-            </div>
-        </div>
+<section class="section-container container-fluid">
+    <div class="image-holder">
+        <img src={{backdrop}} alt="" class="landing-image">
+        <h1 class="mainTitle display-1 text-center">{{title}}</h1>
     </div>
 </section>

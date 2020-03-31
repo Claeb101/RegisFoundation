@@ -1,3 +1,4 @@
+import { TelMailPipe } from './footer/tel_mail_pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 
@@ -22,7 +23,8 @@ import { LeadershipComponent } from './leadership/leadership.component';
     AboutComponent,
     DonateComponent,
     FooterComponent,
-    LeadershipComponent
+    LeadershipComponent,
+    TelMailPipe
   ],
   imports: [
     BrowserModule,

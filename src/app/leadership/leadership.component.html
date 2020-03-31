@@ -7,20 +7,25 @@
     </div>
 </section>
 <section class="bg container-fluid">
+    <div class="role-filters">
+        <button class="filter-button" id="filter-all" (click)="filterRole('All')">All</button>
+        <button class="filter-button" id="filter-trustees" (click)="filterRole('Trustee')">Trustees</button>
+        <button class="filter-button" id="filter-mentors" (click)="filterRole('Mentor')">Mentors</button>
+    </div>
     <div class="row">
-        <div *ngFor="let trustee of trustees" class="col-md-4 col-sm-12">
+        <div *ngFor="let member of filterMembers" class="col-md-3 col-sm-12">
             <div class="member-card">
                 <div class="image-holder">
-                    <img src={{trustee.image_path}} alt="team member" class="pfp">
+                    <img src={{member.image_path}} alt="team member" class="pfp">
 
                     <div class="hover-cover">
-                        <p class="cover-description">{{trustee.description}}</p>
+                        <p class="cover-description">{{member.description}}</p>
                     </div>
                 </div>
 
                 <div class="primary-description">
-                    <h5 class="name">{{trustee.name}}</h5>
-                    <span class="team-role">{{trustee.role}}</span>
+                    <h5 class="name">{{member.name}}</h5>
+                    <span class="team-role">{{member.role}}</span>
                 </div>
             </div>
         </div>
