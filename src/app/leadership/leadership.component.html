@@ -10,12 +10,17 @@
     <div class="row">
         <div *ngFor="let trustee of trustees" class="col-md-4 col-sm-12">
             <div class="member-card">
-                <div class="pfp">
-                    <img src={{trustee.image_path}} alt="team member" class="image">
+                <div class="image-holder">
+                    <img src={{trustee.image_path}} alt="team member" class="pfp">
+
+                    <div class="hover-cover">
+                        <p class="cover-description">{{trustee.description}}</p>
+                    </div>
                 </div>
-                <div class="content">
-                    <h5>Martin Smith</h5>
-                    <span>founder & ceo</span>
+
+                <div class="primary-description">
+                    <h5 class="name">{{trustee.name}}</h5>
+                    <span class="team-role">{{trustee.role}}</span>
                 </div>
             </div>
         </div>

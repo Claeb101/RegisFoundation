@@ -7,17 +7,64 @@ h1 {
     background-color: #394c5e;
 }
 
-.image {
-    max-width: 100%;
-    width: 100%;
-    height: 400px;
-    object-fit: cover;
-}
-
 .pfp {
     width: 100%;
+    position: absolute;
+    max-width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 1;
+    transition: all 0.5s ease-in-out;
+}
+
+.hover-cover {
+    opacity: 0;
+    z-index: 1;
+    position: absolute;
+    transition: all 0.5s ease-in-out;
+}
+
+.cover-description {
+    color: $mainColor;
+
+    text-align: left;
+
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 0%;
+
+    transition: all 0.5s ease-in-out;
+}
+
+.image-holder {
+    position: relative;
+    display: block;
+    height: 400px;
 }
 
 .member-card {
     box-sizing: border-box;
 }
+
+.image-holder:hover .hover-cover {
+    opacity: 1;
+}
+
+.image-holder:hover .cover-description {
+    margin-top: 20%;
+}
+
+.image-holder:hover .pfp{
+    opacity: 0.1;
+}
+
+.name {
+    color: $mainColor;
+    text-transform: uppercase;
+}
+
+.team-role {
+    color: $mainColor;
+    text-transform: uppercase;
+}
+
