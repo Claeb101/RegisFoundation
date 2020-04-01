@@ -1,8 +1,147 @@
-@import 'src/styles.scss';
+@import "src/styles.scss";
+
 h1 {
     color: $mainColor;
 }
 
-.bg {
+.statements-section, .time-section {
     background-color: steelblue;
+    overflow: hidden;
 }
+
+.statements-section {
+    padding-top: 5%;
+}
+
+.time-section {
+    padding-top: 10%;
+}
+
+.timeline {
+    max-width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0 auto;
+}
+
+.timeline::after {
+    content: '';
+    position: absolute;
+    width: 6px;
+    left: 50%;
+    top: 5%;
+    bottom: 0;
+    margin-left: -3px;
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1),
+                                    rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.5));
+    
+    
+}
+
+.event.left .event-content{
+    margin-left: 0;
+    margin-right: auto;
+    display: flex;
+}
+.event.right .event-content{
+    margin-left: auto;
+    margin-right: 0;
+    display: flex;
+    flex-flow: row-reverse;
+}
+
+.event-content {
+    width: 50%;
+}
+
+$infoColor: rgb(243, 192, 126);
+.event-info {
+    width: 50%;
+    position: relative;
+    background-color: $infoColor;
+    padding: 10px 40px;
+    border-radius: 10px;
+}
+
+.event.left .event-content .event-info {
+    margin-left: 35%;
+}
+
+.event.right .event-content .event-info {
+    margin-right: 35%;
+}
+
+$arrowSize: 20px;
+.event.left .event-content .arrow {
+    margin-left:0;
+    margin-right: auto;
+    margin-top: 5%;
+    
+    width: 0; 
+    height: 45px; 
+    border-top: $arrowSize solid transparent;
+    border-bottom: $arrowSize solid transparent; 
+    border-left:$arrowSize solid $infoColor; 
+}
+.event.right .event-content .arrow {
+    margin-left: auto;
+    margin-right: 0;
+    margin-top: 5%;
+
+    width: 0; 
+    height: 45px; 
+    border-top: $arrowSize solid transparent;
+    border-bottom: $arrowSize solid transparent; 
+    border-right:$arrowSize solid $infoColor; 
+}
+
+.event.left .event-content .circle {
+    margin: 5% -12.5px 0 auto;
+
+}
+.event.right .event-content .circle {
+    margin: 5% auto 0 -12.5px;
+}
+
+// .event {
+//     border: 1px solid green;
+// }
+
+// .event-content {
+//     border: 1px solid blue;
+// }
+
+// .event-info {
+//     border: 1px solid red;
+// }
+
+$circleDm: 25px;
+.circle {
+    z-index: 1;
+    background-color: white;
+
+    width: $circleDm;
+    height: $circleDm;
+
+    border: $circleDm/5 solid $infoColor;
+    border-radius: $circleDm/2;
+}
+
+.image-container {
+    border: 1px solid blue;
+}
+
+.roots-img {
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: -10px;
+
+    width: 100%;
+    height: 500px;
+    object-position: 55% 0%;
+    object-fit: cover;
+
+
+    mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0));
+}
+

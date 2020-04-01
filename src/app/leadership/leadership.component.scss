@@ -1,13 +1,13 @@
 @import 'src/styles.scss';
 
-$buttonColor: slategray;
+$buttonColor: rgb(68, 240, 174);
 
 h1 {
     color: $mainColor;
 }
 
 .bg {
-    background-color: #394c5e;
+    background-color: steelblue;
     padding-bottom: 2%;
 }
 
@@ -34,14 +34,16 @@ h1 {
     transition: border 0.2s ease-in-out;
 }
 
+$selectedColor: rgb(39, 163, 153);
+$focusColor: #0aa8e7;
 .filter-button:hover, .filter-button:focus {
-    background-color: #2b5d8b;
-    border-color: #2b5d8b;
+    background-color: $selectedColor;
+    border-color: $selectedColor;
 }
 
 .filter-button:focus {
-    background-color: #2267a7;
-    border-color: #2267a7;
+    background-color: $focusColor;
+    border-color: $focusColor;
     outline: none;
 }
 /****************************************/

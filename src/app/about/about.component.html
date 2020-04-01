@@ -1,10 +1,54 @@
 <app-navbar></app-navbar>
 
-<section class="bg container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h1 class="mainTitle display-1 text-center">{{title}}</h1>
+<section class="statements-section container-fluid">
+    <div class="row text-center">
+        <div class="col-lg-4 col-md-12">
+            <h1 class="statement-title display-3">Our Goal</h1>
+            <h5>{{goalStatement}}</h5>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <h1 class="statement-title display-3">Our Mission</h1>
+            <h5>{{missionStatement}}</h5>
+        </div>
+        <div class="col-lg-4 col-md-12">
+            <h1 class="statement-title display-3">Our Influence</h1>
+            <h5>{{workStatement}}</h5>
         </div>
     </div>
 </section>
+<section class="time-section container-fluid">
+    <div class="timeline">
+        <div *ngFor="let event of timeline; index as i">
+            <div *ngIf="i % 2 == 0; then leftEvent else rightEvent" class="x"></div>
+            <ng-template #leftEvent>
+                <div class="event left">
+                    <div class="event-content">
+                        <div class="event-info">
+                            <h1>{{event.date}}</h1>
+                            <p>{{event.description}}</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </ng-template>
+            <ng-template #rightEvent>
+                <div class="event right">
+                    <div class="event-content">
+                        <div class="event-info">
+                            <h1>{{event.date}}</h1>
+                            <p>{{event.description}}</p>
+                        </div>
+                        <div class="arrow"></div>
+                        <div class="circle"></div>
+                    </div>
+                </div>
+            </ng-template>
+        </div>
+    </div>
+    <div class="img_container">
+        <img src={{roots_img_path}} alt="" class="roots-img">
+    </div>
+</section>
+
 <app-footer></app-footer>
