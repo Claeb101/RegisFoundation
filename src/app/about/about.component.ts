@@ -20,10 +20,11 @@ export class AboutComponent implements OnInit {
     this.workStatement = "We work wherever we are needed in Tamil Nadu to serve children from difficult family backgrounds."
 
     this.timeline = [
-      {date: "2019", description: "Lorem ipsum dolor sit amet, at summo vitae quo. Postulant torquatos temporibus et vis, vim ei rebum clita. Graeci fuisset antiopam ex est, integre volumus no est, id vis scripta mediocrem. Diam quidam eleifend mel an, in cum minimum interesset."},
-      {date: "2019", description: "Lorem ipsum dolor sit amet, at summo vitae quo. Postulant torquatos temporibus et vis, vim ei rebum clita. Graeci fuisset antiopam ex est, integre volumus no est, id vis scripta mediocrem. Diam quidam eleifend mel an, in cum minimum interesset."},
-      {date: "2019", description: "Lorem ipsum dolor sit amet, at summo vitae quo. Postulant torquatos temporibus et vis, vim ei rebum clita. Graeci fuisset antiopam ex est, integre volumus no est, id vis scripta mediocrem. Diam quidam eleifend mel an, in cum minimum interesset."},
-      {date: "2019", description: "Lorem ipsum dolor sit amet, at summo vitae quo. Postulant torquatos temporibus et vis, vim ei rebum clita. Graeci fuisset antiopam ex est, integre volumus no est, id vis scripta mediocrem. Diam quidam eleifend mel an, in cum minimum interesset."},
+      {date: "...", description: "The Dr. ANS Regis Foundation was formed as a public charitable non-profit trust."},
+      {date: "2017", description: "80 students studying in 10th standard at Kalaiyarkoil, Sivagangai District, Government Higher Secondary School were provided with an advanced learners dictionary."},
+      {date: "2017", description: "30 children learning at the Govt. primary school in Veterneri village, sivagangai-district were given a colorful dresses."},
+      {date: "2019", description: "125 students studying in 11th standard at Kavarapatti Village, Kudukottai District, Government Higher Secondary School were provided with an advanced learners dictionary."},
+      {date: "2020", description: "We plan to reach out to even more children."},
     ]
 
     this.roots_img_path = "assets/treeEdited2.png";

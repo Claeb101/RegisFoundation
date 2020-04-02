@@ -1,19 +1,10 @@
 <section class="container-fluid footer">
     <div class="social">
-        <h1 class="social-text display-3">Connect With Us</h1>
+        <h1 class="social-text display-3">{{title}}</h1>
         <div class="social-icons">
             <a *ngFor="let icon of icons" href={{icon.link}} target="_blank">
                 <button type="button" [ngClass]="'social-button btn-' + icon.iconClassName"><i [ngClass]="'fa fa-' + icon.iconClassName"></i></button>
             </a>
-        </div>
-    </div>
-    <div class="contact">
-        <h3 class="contact-text">Contact Us:</h3>
-        <div class="email">
-            <a class="email-text" href={{email}}>{{email | telMail}}</a>
-        </div>
-        <div class="phone-number">
-            <a class="phone-number-text" href={{phoneNumber}}>{{phoneNumber | telMail}}</a>
         </div>
     </div>
     <hr class="adr-break">

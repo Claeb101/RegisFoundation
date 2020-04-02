@@ -7,11 +7,15 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent implements OnInit {
+  title : string;
+
   icons : SocialIcon[];
   address : string;
   email : string;
   phoneNumber : string;
   constructor() {
+    this.title = "Connect With Us";
+
     this.icons = [
       {iconClassName: "facebook", link: "https://www.facebook.com/"}, 
       {iconClassName: "twitter", link: "https://www.twitter.com/"}, 
