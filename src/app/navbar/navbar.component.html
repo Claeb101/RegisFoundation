@@ -1,12 +1,17 @@
-<nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-  <a class="navbar-brand" href="/home">
-    <img id="navLogo" src={{logoSrc}} alt="">
-    <span class="navbar-text" id="mainNavTitle">{{mainTitle}}</span>
-  </a>
-  
-  <ul class="navbar-nav ml-auto">
-    <li class="nav-item" *ngFor="let nav of navBarParts">
-      <a class="nav-link" href={{nav.link}}>{{nav.display}}</a>
-    </li>
-  </ul>
-</nav>
+<div class="bar">
+    <div class="main-item">
+      <a class="navbar-brand" href="/home">
+        <img class="nav-logo" src={{logoSrc}} alt="">
+        <span class="navbar-text" id="mainNavTitle">{{mainTitle}}</span>
+      </a>
+      <button class="toggler" (click)="toggle()">
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    
+    <div class="link-holder" #holder>
+      <div class="nav-item" *ngFor="let nav of navBarParts">
+        <a class="nav-link" href={{nav.link}}>{{nav.display}}</a>
+      </div>
+    </div>
+</div>

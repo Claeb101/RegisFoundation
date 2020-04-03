@@ -11,13 +11,21 @@ h1 {
 
 .statements-section {
     height: 100%;
-    padding-top: 12%;
-    padding-bottom: 12%;
+    padding-top: 13%;
+    padding-bottom: 13%;
 }
 .statements-row {
     height: 100%;
-    align-items: center;
+    align-items: flex-start;
     justify-content: center;
+}
+
+.statement {
+    transition: transform 0.5s ease-in-out;
+}
+
+.statement:hover {
+    transform: scale(1.1, 1.1);
 }
 
 .goal {

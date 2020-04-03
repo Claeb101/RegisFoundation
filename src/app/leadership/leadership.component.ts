@@ -1,5 +1,6 @@
 import { TeamMember } from './teamMember';
 import { Component, OnInit } from '@angular/core';
+import * as AOS from 'aos';
 
 @Component({
   selector: 'app-leadership',
@@ -22,7 +23,7 @@ export class LeadershipComponent implements OnInit {
     this.title = "Meet The Team";
     this.members = [
       {image_path: img, description: "A post graduate in women's studies and education. She has vast experience in teaching and working with school students. She has been recognized as an illustrious teacher through an award by Justice Shiv Raj V. Patil Foundation, Madurai, in 2019. She is also a well recognized trainer in parenting, child centered education and child rights", name: "Christy S. JohnPeter", role: "Mentor"},
-      {image_path: img, description: "Currently working as Asst. Professor and Head of the Department of Social Work in Chennai. He started his career as a young professional of CAPART, Ministry of Rural Development, Govt. of India. He has been involved in migration research since 2012.", name: "Antony Stephen", role: "Mentor"},
+      {image_path: "assets/MrStephen.png", description: "Currently working as Asst. Professor and Head of the Department of Social Work in Chennai. He started his career as a young professional of CAPART, Ministry of Rural Development, Govt. of India. He has been involved in migration research since 2012.", name: "Antony Stephen", role: "Mentor"},
       {image_path: img, description: des, name: "Nathan A. Amalorpavam", role: "Mentor"},
 
       {image_path: img, description: "A post graduate in sociology. He has more than 30 years of experience in imparting social analysis and leadership training for university students and rural youth. He motivates and involves students in the tree growing mission, and he is responsible to lead the foundation as its honorary managing trustee.", name: "John P. Amalorpavam", role: "Trustee"},
@@ -48,6 +49,7 @@ export class LeadershipComponent implements OnInit {
   filterRole(role : string){
     this.roleFilter = role;
     this.filter();
+    AOS.init();
   }
 
   ngOnInit(): void {

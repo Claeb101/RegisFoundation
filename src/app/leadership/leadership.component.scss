@@ -1,6 +1,6 @@
 @import 'src/styles.scss';
 
-$buttonColor: rgb(68, 240, 174);
+$buttonColor: rgb(243, 192, 126);
 
 h1 {
     color: $mainColor;
@@ -34,8 +34,8 @@ h1 {
     transition: border 0.2s ease-in-out;
 }
 
-$selectedColor: rgb(39, 163, 153);
-$focusColor: #0aa8e7;
+$selectedColor: rgb(206, 146, 68);
+$focusColor: rgb(179, 185, 184);
 .filter-button:hover, .filter-button:focus {
     background-color: $selectedColor;
     border-color: $selectedColor;

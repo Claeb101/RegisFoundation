@@ -1,22 +1,143 @@
 @import 'src/styles.scss';
 
-.navItem {
+$navColor: #333;
+.bar, .main-item, .link-holder {
+    background-color: $navColor;
+}
+
+.navbar-text, .nav-link {
     color: $mainColor;
 }
 
-#navLogo {
-    max-width: 2.6042vw;
+.nav-logo {
+    max-width: 50px;
     height: auto;
 }
 
-#mainNavTitle {
-    padding-left: 1rem;
-}
-
 .navbar-text {
-    color: $mainColor;
+    margin-left: 10px;
+    margin-right: 0px;
 }
 
-.nav-link {
-    color: $mainColor;
+.main-item {
+    display: flex;
+}
+
+$min_height: 60px;
+.bar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    min-height: $min_height;
+
+    overflow: hidden;
+    position: sticky;
+    top: 0;
+
+    display: flex;
+    align-items: center;
+
+
+    z-index: 500;
+}
+
+.toggler {
+    background-color: transparent;
+    justify-self: flex-end;
+    display: none;
+    border: 0px;
+}
+
+.fa-bars {
+    color: rgb(243, 192, 126);
+}
+
+.link-holder {
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-end;
+}
+
+.nav-item {
+    height: $min_height;
+    margin-right: 0;
+    margin-left: 0;
+    background-color: $navColor;
+
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.nav-item:hover {
+    background-color: rgb(80, 77, 77);
+}
+
+@media screen and(max-width: 900px){
+    .bar {
+        display: block;
+    }
+
+    .main-item {
+        width: 100%;
+    }
+
+    .link-holder {
+        width: 100%;
+        display: none;
+    }
+
+    .toggler {
+        display: block;
+        margin-left: auto;
+        margin-right: 10px;
+    }
+}
+
+@media screen and(min-width: 900px){
+    .nav-logo {
+        max-width: 50px;
+        height: auto;
+    }
+    
+    .navbar-text {
+        margin-left: 10px;
+        margin-right: 0px;
+    }
+    
+    .main-item {
+        display: flex;
+    }
+    
+    .bar {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        position: sticky;
+        top: 0;
+    
+        display: flex;
+        align-items: center;
+    }
+    
+    .toggler {
+        background-color: transparent;
+        justify-self: flex-end;
+        display: none;
+    }
+    
+    .link-holder {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: flex-end;
+    }
+    
+    .nav-item {
+        margin-right: 0;
+        margin-left: 0;
+    }
 }

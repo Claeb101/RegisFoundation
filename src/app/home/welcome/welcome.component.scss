@@ -7,6 +7,17 @@
 
 .mainTitle {
     color: $mainColor;
+
+    animation: fade 1s linear 0s 1 forwards;
+}
+
+@keyframes fade {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
 
 .landing-image {
@@ -16,7 +27,6 @@
     height: 100%;
     object-fit: cover;
     opacity: 1;
-    transition: all 0.5s ease-in-out;
     z-index: -1;
 }
 

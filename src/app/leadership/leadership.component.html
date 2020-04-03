@@ -1,19 +1,15 @@
 <app-navbar></app-navbar>
 <section class="bg container-fluid">
-    <div class="row">
-        <div class="col-12">
-            <h1 class="mainTitle display-1 text-center">{{title}}</h1>
-        </div>
-    </div>
+    <h1 class="mainTitle display-1 text-center" data-aos="fade-up">{{title}}</h1>
 </section>
 <section class="bg container-fluid">
-    <div class="role-filters">
+    <div class="role-filters" data-aos="fade-right">
         <button class="filter-button" id="filter-all" (click)="filterRole('All')">All</button>
         <button class="filter-button" id="filter-trustees" (click)="filterRole('Trustee')">Trustees</button>
         <button class="filter-button" id="filter-mentors" (click)="filterRole('Mentor')">Mentors</button>
     </div>
     <div class="row">
-        <div *ngFor="let member of filterMembers" class="col-md-3 col-sm-12">
+        <div *ngFor="let member of filterMembers" class="col-lg-3 col-md-12">
             <div class="member-card">
                 <div class="image-holder">
                     <img src={{member.image_path}} alt="team member" class="pfp">
