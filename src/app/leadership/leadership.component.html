@@ -10,7 +10,7 @@
         <div *ngFor="let member of filteredMembers" class="col-lg-3 col-md-12 member">
             <div class="member-card">
                 <div class="image-holder">
-                    <img src={{member.image_path}} alt="team member" class="pfp">
+                    <img src={{member.image_path}} alt="{{defaultPNG}}" class="pfp">
 
                     <div class="hover-cover">
                         <p class="cover-description">{{member.description}}</p>
