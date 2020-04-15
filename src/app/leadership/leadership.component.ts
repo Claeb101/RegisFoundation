@@ -20,11 +20,11 @@ export class LeadershipComponent implements OnInit {
   constructor() {
     let des = "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Magna ac placerat vestibulum lectus mauris. Eget velit aliquet sagittis id consectetur purus. Feugiat nisl pretium fusce id velit ut tortor pretium. Rhoncus mattis rhoncus urna neque viverra.";
     let pics_dir = "assets/MemberPics/";
-    this.defaultPNG = pics_dir + "JANS.jpg"
+    this.defaultPNG = pics_dir + "person.jpg"
 
     this.title = "Meet The Team";
     this.members = [
-      {image_path: this.defaultPNG, description: "A post graduate in women's studies and education. She has vast experience in teaching and working with school students. She has been recognized as an illustrious teacher through an award by Justice Shiv Raj V. Patil Foundation, Madurai, in 2019. She is also a well recognized trainer in parenting, child centered education and child rights", name: "Christy S. JohnPeter", role: "Mentor"},
+      {image_path: pics_dir + "Christy.jpg", description: "A post graduate in women's studies and education. She has vast experience in teaching and working with school students. She has been recognized as an illustrious teacher through an award by Justice Shiv Raj V. Patil Foundation, Madurai, in 2019. She is also a well recognized trainer in parenting, child centered education and child rights", name: "Christy S. JohnPeter", role: "Mentor"},
       {image_path: pics_dir + "MrStephen.png", description: "Currently working as Asst. Professor and Head of the Department of Social Work in Chennai. He started his career as a young professional of CAPART, Ministry of Rural Development, Govt. of India. He has been involved in migration research since 2012.", name: "Antony Stephen", role: "Mentor"},
       {image_path: this.defaultPNG, description: des, name: "A. Nathan Alexander", role: "Mentor"},
 
@@ -32,17 +32,17 @@ export class LeadershipComponent implements OnInit {
       {image_path: this.defaultPNG, description: "A post graduate in history and a trained graduate teacher with 18 years teaching experience with rural children. She is responsible to identify the deserving beneficiaries for the foundation's Educational Assistance Program.", name: "Shanthi Franklin", role: "Honorary Trustee"},
       {image_path: this.defaultPNG, description: "A post graduate in English literature and a trained graduate teacher with 21 years of teaching experience with rural children. A multi skilled Entrepreneur involved in agriculture and agro forestry. He is responsible for mobilizing donations for the foundation's Educational Assistance Program", name: "Franklin D. Amalorpavam", role: "Honorary Trustee"},
 
-      {image_path: pics_dir + "Premi.png", description: "BDS", name: "Dr. J. Sebasti Jeya Premi", role: "Ambassador"},
-      {image_path: pics_dir + "Priya.png", description: "MBBS", name: "Dr. J. Jane Priya", role: "Ambassador"},
-      {image_path: pics_dir + "Sam.png", description: "MBBS", name: "Dr. S. Sam Stanley", role: "Ambassador"},
-      {image_path: this.defaultPNG, description: "MBBS", name: "Dr. R. Aaron Aravindh Regis", role: "Ambassador"},
-      {image_path: pics_dir + "Robin.png", description: "MBBS", name: "Dr. S. Edberg Robin", role: "Ambassador"},
-      {image_path: pics_dir + "Rowina.png", description: "BDS", name: "Dr. S. Rowina Suzanne", role: "Ambassador"},
-      {image_path: pics_dir + "Lotus.png", description: "MA BEd", name: "S. Lotus Nirmala", role: "Ambassador"},
-      {image_path: pics_dir + "Manju.png", description: "MSc MPhil MEd", name: "J. Angel Manju", role: "Ambassador"},
-      {image_path: pics_dir + "Gracy.png", description: "MA BEd", name: "S. Violet Adaikala Gracy", role: "Ambassador"},
-      {image_path: pics_dir + "Joan.png", description: "MSc MBA", name: "A. JoanOfArc", role: "Ambassador"},
-      {image_path: pics_dir + "Pari.png", description: "MA BSc", name: "A. James Pari Mannan", role: "Ambassador"},
+      {image_path: pics_dir + "Premi.jpg", description: "The first dentist of the family and the niece of Dr. Regis, presently working in Singapore.", name: "Dr. J. Sebasti Jeya Premi, BDS", role: "Ambassador"},
+      {image_path: pics_dir + "Priya.jpg", description: "The first doctor to follow the path of her uncle Dr. Regis, currently working in Chennai.", name: "Dr. J. Jane Priya, MBBS", role: "Ambassador"},
+      {image_path: pics_dir + "Sam.jpg", description: "The first doctor to work in the Maldives from the family and nephew of Dr. Regis, presently working in Bangalore.", name: "Dr. S. Sam Stanley, MBBS", role: "Ambassador"},
+      {image_path: pics_dir + "Regis.jpg", description: "The inspiration for this foundation.", name: "Dr. R. Aaron Aravindh Regis, MBBS", role: "Ambassador"},
+      {image_path: pics_dir + "Robin.jpg", description: "The first doctor in the family who did his medicine in the West Indies and U.S.A., the nephew of Dr. Regis.", name: "Dr. S. Edberg Robin, MBBS", role: "Ambassador"},
+      {image_path: pics_dir + "Rowina.jpg", description: "The second dentist of the family and the niece of Dr. Regis.", name: "Dr. S. Rowina Suzanne, BDS", role: "Ambassador"},
+      {image_path: pics_dir + "Lotus.jpg", description: "The first younger sister of Dr. Regis, presently working in Chennai as a history teacher.", name: "S. Lotus Nirmala, MA; BEd", role: "Ambassador"},
+      {image_path: pics_dir + "Manju.jpg", description: "The second younger sister of Dr. Regis, presently working as a chemistry teacher in Trichy.", name: "J. Angel Manju, MSc; MPhil; MEd", role: "Ambassador"},
+      {image_path: pics_dir + "Gracy.jpg", description: "The third younger sister of Dr. Regis, presently working at Trends Tower, a garments production unit in Tirupur.", name: "S. Violet Adaikala Gracy, MA; BEd", role: "Ambassador"},
+      {image_path: pics_dir + "Joan.png", description: "The fourth younger sister of Dr. Regis, presently working as a software professional in Virginia, U.S.A.", name: "A. JoanOfArc, MSc; MBA", role: "Ambassador"},
+      {image_path: pics_dir + "Pari.jpg", description: "The first younger brother of Dr. Regis, currently running his own food products dirstribution buisness in Trichy.", name: "A. James Pari Mannan, BSc; MA", role: "Ambassador"},
       
     ];
 

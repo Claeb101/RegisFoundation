@@ -102,6 +102,10 @@ $focusColor: rgb(179, 185, 184);
     opacity: 0.1;
 }
 
+.primary-description {
+    margin-top: 10px;
+}
+
 .name {
     color: $mainColor;
     text-transform: uppercase;
@@ -111,4 +115,3 @@ $focusColor: rgb(179, 185, 184);
     color: $mainColor;
     text-transform: uppercase;
 }
-
