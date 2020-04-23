@@ -24,7 +24,7 @@ import { LeadershipComponent } from './leadership/leadership.component';
     DonateComponent,
     FooterComponent,
     LeadershipComponent,
-    TelMailPipe
+    TelMailPipe,
   ],
   imports: [
     BrowserModule,

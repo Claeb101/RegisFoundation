@@ -20,35 +20,16 @@ h1 {
     justify-content: center;
 }
 
-.statement {
-    transition: transform 0.5s ease-in-out;
-}
-
 .statement:hover {
     transform: scale(1.1, 1.1);
 }
 
-.goal {
+
+[data-aos="statement"] {
     opacity: 0;
-    animation: display 1s linear 0s 1 forwards;
-}
+    transform: opacity, 1s;
 
-.mission{
-    opacity: 0;
-    animation: display 1s linear 1s 1 forwards;
-}
-
-.influence {
-    opacity: 0;
-    animation: display 1s linear 2s 1 forwards;
-}
-
-@keyframes display {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
+    &.aos-animate {
         opacity: 1;
     }
 }
@@ -72,10 +53,13 @@ h1 {
     left: 50%;
     bottom: 0;
     margin-left: -3px;
-    background-image: linear-gradient(to bottom, rgb(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1),
-                                    rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75));
+    background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
     
     
+}
+
+.event {
+    margin-top: 10%;
 }
 
 .event.left .event-content{
@@ -206,8 +190,7 @@ $circleDm: 25px;
         left: 0%;
         bottom: 0;
         margin-left: -3px;
-        background-image: linear-gradient(to bottom, rgb(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1),
-                                        rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 1), rgba(255, 255, 255, 0.75));
+        background-image: linear-gradient(to bottom, rgb(255, 255, 255, 0) 0%, rgba(255, 255, 255, 1) 10%, rgba(255, 255, 255, 1) 90%, rgba(255, 255, 255, 0) 100%);
         
         
     }
