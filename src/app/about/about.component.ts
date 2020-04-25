@@ -21,7 +21,7 @@ export class AboutComponent implements OnInit {
     this.workStatement = "We work wherever we are needed in Tamil Nadu to serve children from difficult family backgrounds."
 
     this.regisTimeline = [
-      {date: "March 12, 1961", description: "Dr. ANS. Regis was born in Thovarlankanmoi, a village in the sivagangai-district of Tamil Nadu. He is the fourth son of Mr. VS. Amalorpavam, school teacher, and Mrs. A. Sebastiammal, farmer and home maker."},
+      {date: "March 12, 1961", description: "Dr. ANS. Regis was born in Thuvarlankanmoi, a village in the Sivagangai-district of Tamil Nadu. He is the fourth son of Mr. VS. Amalorpavam, school teacher, and Mrs. A. Sebastiammal, farmer and home maker."},
       {date: "...", description: "Started his primary education at Holy Cross Anglo Indian School, Tuticorin."},
       {date: "...", description: "Began high school studies at St. Mary's High School, Madurai."},
       {date: "...", description: "Started pre-university studies at St. Josephs's College, Trichy."},
@@ -38,7 +38,7 @@ export class AboutComponent implements OnInit {
     this.foundationTimeline = [
       {date: "...", description: "The Dr. ANS Regis Foundation was formed as a public charitable non-profit trust."},
       {date: "2017", description: "80 students studying in 10th standard at Kalaiyarkoil, Sivagangai District, Government Higher Secondary School were provided with an advanced learners dictionary."},
-      {date: "2017", description: "30 children learning at the Govt. primary school in Veterneri village, sivagangai-district were given a colorful dresses."},
+      {date: "2017", description: "30 children learning at the Govt. primary school in Veterneri village, Sivagangai-district were given a colorful dresses."},
       {date: "2019", description: "125 students studying in 11th standard at Kavarapatti Village, Kudukottai District, Government Higher Secondary School were provided with an advanced learners dictionary."},
       {date: "2020", description: "We plan to reach out to even more children."},
     ]
