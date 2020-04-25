@@ -61,8 +61,8 @@
 </section>
 
 <!-- Foundation Timeline -->
-<section class="time-section container-fluid">
-    <div class="timeline">
+<section class="time-section foundation-section container-fluid">
+    <div class="timeline foundation-timeline">
         <div *ngFor="let event of foundationTimeline; index as i">
             <div *ngIf="i % 2 == 0; then leftEvent else rightEvent"></div>
             <ng-template #leftEvent>

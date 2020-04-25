@@ -4,6 +4,10 @@ h1 {
     color: $mainColor;
 }
 
+.foundation-timeline {
+    padding-bottom: 10%;
+}
+
 .statements-section, .time-section {
     background-color: steelblue;
     overflow: hidden;
@@ -59,7 +63,7 @@ h1 {
 }
 
 .event {
-    margin-top: 10%;
+    margin-top: 2.5%;
 }
 
 .event.left .event-content{
