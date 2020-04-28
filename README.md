@@ -7,14 +7,25 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 The master branch is only for final reviewed commits.
 
 Making Changes:
-1. Create a new branch off of dev branch.
-2. Commit changes locally and create a pull request.
-3. After this request has been reviewed, merge the branch to dev.
-4. The dev branch will be progressively merged to master.
+1. Create a new branch off of dev branch named feature/FEATURE_NAME and update the repo.
+  * git checkout dev--
+  * git checkout -b feature/FEATURE_NAME
+  * git push -u origin feature/FEATURE_NAME
+2. Commit changes locally and push to the repo.
+  * **make changes**
+  * git commit -am "COMMIT MESSAGE"
+  * git push origin feature/FEATURE_NAME
+3. Create a pull request for review.
+4. Merge the branch to the dev branch and delete the feature branch.
+  * git checkout dev
+  * git merge feature/FEATURE_NAME
+  * git push
+  * git push -d origin feature/FEATURE_NAME
+5. The dev branch will be progressively merged to master.
 
 ## Cloning
 
-Clone the project.
+Clone the master branch.
 Run npm install in the cloned project folder.
 Ensure that @angular/cli has been installed globally. If not, run npm install -g @angular/cli.
 Follow the steps below to run a dev server or build the project.
