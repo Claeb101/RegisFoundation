@@ -21,6 +21,7 @@ Making Changes:
   * git merge feature/FEATURE_NAME
   * git push
   * git push -d origin feature/FEATURE_NAME
+  * git branch -d feature/FEATURE_NAME
 5. The dev branch will be progressively merged to master.
 
 ## Cloning
