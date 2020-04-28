@@ -8,8 +8,12 @@
         </div>
     </div>
     <hr class="adr-break">
-    <div class="address">
+    <div class="break-info">
         <h5 class="adr-text">{{address}}</h5>
+        <h6 class="break-contacts">
+            <a class="break-contact break-email" href={{email}}>Email: {{email | telMail}}</a>
+            <a class="break-contact break-tel" href={{phoneNumber}}>Mobile: {{phoneNumber | telMail}}</a>
+        </h6>
     </div>
 </section>
 
