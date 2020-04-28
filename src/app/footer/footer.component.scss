@@ -75,24 +75,26 @@ $buttonDm : 50px;
 }
 // ICONS***********************************************
 
-.contact {
-  margin-left: 2%;
-}
-
-.phone-number-text {
-  color: black;
-}
-
-.email-text {
-  color: black;
-}
-
-.address {
-  padding-bottom: 5%;
+.break-info {
+  padding-bottom: 10px;
   text-align: center;
 }
 
 .adr-break {
   margin-top: 5%;
   border-top: 1px solid black;
+}
+
+.break-contacts {
+  display: flex;
+  flex-flow: row nowrap;
+
+  align-items: center;
+  justify-content: center;
+}
+
+.break-contact {
+  text-decoration: none;
+  color: black;
+  width: 20%;
 }
