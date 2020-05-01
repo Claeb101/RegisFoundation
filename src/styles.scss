@@ -1,8 +1,16 @@
+@use 'sass:list';
+
 /* You can add global styles to this file, and also import other style files */
-$mainColor : rgb(255, 255, 255);
+$mainTextColor : rgb(255, 255, 255);
+$themeColors : #4682B4, #FE938C, #F1AB86, #EAD2AC, #49BEAA, $mainTextColor;
 
 .display-1 {
     font-size: 5.8594vw;
+    color: list.nth($themeColors, 4);
+}
+
+h1 {
+    color: list.nth($themeColors, 4);
 }
 
 .body {

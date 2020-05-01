@@ -1,3 +1,5 @@
+@use 'sass:list';
+@use 'sass:color';
 @import 'src/styles.scss';
 
 .section-container {
@@ -6,8 +8,7 @@
 }
 
 .mainTitle {
-    color: $mainColor;
-
+    color: list.nth($themeColors, 4);
     animation: fade 1s linear 0s 1 forwards;
 }
 
@@ -26,7 +27,7 @@
     max-width: 100%;
     height: 100%;
     object-fit: cover;
-    opacity: 1;
+    opacity: 0.7;
     z-index: -1;
 }
 
@@ -39,4 +40,17 @@
 
     height: 45vw;
     width: 100%;
+
+    background: mix(rgb(0, 0, 0), rgba(255, 255, 255, 0), 25%);
+    animation: img-fade 1s linear 0s 1 forwards;
+}
+
+@keyframes img-fade {
+    0% {
+        background: rgba(255, 255, 255, 0);
+    }
+
+    100% {
+        background: mix(rgb(0, 0, 0), rgba(255, 255, 255, 0), 45%);
+    }
 }

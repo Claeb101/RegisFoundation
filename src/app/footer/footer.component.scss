@@ -1,12 +1,15 @@
+@use 'sass:list';
 @import 'src/styles.scss';
 
+$textColor: list.nth($themeColors, 6);
 .footer {
-  background-color: slategray;
+  background-color: list.nth($themeColors, 2);
   overflow: hidden;
   padding: 0px;
 }
 
 .social-text {
+  color: $textColor;
   text-align: center;
   margin-top: 1%;
 }
@@ -82,7 +85,11 @@ $buttonDm : 50px;
 
 .adr-break {
   margin-top: 5%;
-  border-top: 1px solid black;
+  border-top: 1px solid $textColor;
+}
+
+.adr-text {
+  color: $textColor;
 }
 
 .break-contacts {
@@ -95,6 +102,6 @@ $buttonDm : 50px;
 
 .break-contact {
   text-decoration: none;
-  color: black;
+  color: $textColor;
   width: 20%;
 }

@@ -1,10 +1,7 @@
+@use 'sass:list';
 @import 'src/styles.scss';
 
-$buttonColor: rgb(243, 192, 126);
-
-h1 {
-    color: $mainColor;
-}
+$buttonColor: list.nth($themeColors, 4);
 
 .bg {
     background-color: steelblue;
@@ -34,8 +31,8 @@ h1 {
     transition: border 0.2s ease-in-out;
 }
 
-$selectedColor: rgb(206, 146, 68);
-$focusColor: rgb(179, 185, 184);
+$selectedColor: list.nth($themeColors, 3);
+$focusColor: list.nth($themeColors, 2);
 .filter-button:hover, .filter-button:focus {
     background-color: $selectedColor;
     border-color: $selectedColor;
@@ -66,7 +63,7 @@ $focusColor: rgb(179, 185, 184);
 }
 
 .cover-description {
-    color: $mainColor;
+    color: $mainTextColor;
 
     text-align: left;
 
@@ -108,11 +105,11 @@ $focusColor: rgb(179, 185, 184);
 }
 
 .name {
-    color: $mainColor;
+    color: $mainTextColor;
     text-transform: uppercase;
 }
 
 .team-role {
-    color: $mainColor;
+    color: $mainTextColor;
     text-transform: uppercase;
 }
