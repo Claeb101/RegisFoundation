@@ -1,0 +1,17 @@
+<div class="bar">
+    <div class="main-item">
+      <a class="navbar-brand" href="/home">
+        <img class="nav-logo" src={{logoSrc}} alt="">
+        <span class="navbar-text" id="mainNavTitle">{{mainTitle}}</span>
+      </a>
+      <button class="toggler" (click)="toggle()">
+        <span class="fa fa-bars"></span>
+      </button>
+    </div>
+    
+    <div class="link-holder" #holder>
+      <div class="nav-item" *ngFor="let nav of navBarParts">
+        <a class="nav-link" href={{nav.link}}>{{nav.display}}</a>
+      </div>
+    </div>
+</div>

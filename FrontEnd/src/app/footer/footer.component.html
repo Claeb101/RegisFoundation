@@ -1,0 +1,21 @@
+<section class="container-fluid footer">
+    <div class="social">
+        <h1 class="social-text display-3">{{title}}</h1>
+        <div class="social-icons">
+            <a *ngFor="let icon of icons" href={{icon.link}} target="_blank">
+                <button type="button" [ngClass]="'social-button btn-' + icon.iconClassName"><i [ngClass]="'fa fa-' + icon.iconClassName"></i></button>
+            </a>
+        </div>
+    </div>
+    <hr class="adr-break">
+    <div class="break-info">
+        <h5 class="adr-text">{{address}}</h5>
+        <h6 class="break-contacts">
+            <a class="break-contact break-email" href={{email}}>Email: {{email | telMail}}</a>
+            <a class="break-contact break-tel" href={{phoneNumber}}>Mobile: {{phoneNumber | telMail}}</a>
+        </h6>
+    </div>
+</section>
+
+
+
