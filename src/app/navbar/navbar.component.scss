@@ -1,12 +1,14 @@
+@use 'sass:list';
 @import 'src/styles.scss';
 
-$navColor: #333;
+
+$navColor: list.nth($themeColors, 2);
 .bar, .main-item, .link-holder {
     background-color: $navColor;
 }
 
 .navbar-text, .nav-link {
-    color: $mainColor;
+    color: $mainTextColor;
 }
 
 .nav-logo {
@@ -49,7 +51,7 @@ $min_height: 60px;
 }
 
 .fa-bars {
-    color: rgb(243, 192, 126);
+    color: list.nth($themeColors, 4);
 }
 
 .link-holder {
@@ -72,7 +74,7 @@ $min_height: 60px;
 }
 
 .nav-item:hover {
-    background-color: rgb(80, 77, 77);
+    background-color: list.nth($themeColors, 3);
 }
 
 @media screen and(max-width: 900px){
