@@ -1,6 +1,9 @@
-# Regis
+# RegisFoundation
+Dr. ANS Regis Foundation Website
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 9.0.7.
+## Setup
+The RegisFoundation repository contains 2 folders, a front end and back end. The front-end folder contains the angular application.
+Please refer to the README.md file in FrontEnd for more information.
 
 ## Collaboration
 
