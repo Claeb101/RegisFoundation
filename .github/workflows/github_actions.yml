@@ -18,4 +18,4 @@ jobs:
         # build_configuration: staging # The build environment for the app. please look configurations in your angular.json
         base_href: /RegisFoundation/   # make sure this corresponds to https://<your_username>.github.io/<base_href>/
         deploy_branch: gh-pages # The branch the action should deploy to.
-        build_folder: dist/Regis # The folder where your project is supposed to be after running ng build by the action.
+        # build_folder: ./dist # The folder where your project is supposed to be after running ng build by the action.
