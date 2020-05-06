@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-      - dev
+      - computerwizjared-patch-1
 jobs:
   build:
 
