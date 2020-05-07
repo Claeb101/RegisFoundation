@@ -8,12 +8,12 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent},
-  { path: 'donate', component: DonateComponent},
-  { path: 'about', component: AboutComponent},
-  { path: 'help', component: HelpComponent},
-  { path: 'leadership', component: LeadershipComponent},
-  { path: '**', redirectTo: 'home' }
+  { path: './home', component: HomeComponent},
+  { path: './donate', component: DonateComponent},
+  { path: './about', component: AboutComponent},
+  { path: './help', component: HelpComponent},
+  { path: './leadership', component: LeadershipComponent},
+  { path: '**', redirectTo: './home' }
 ];
 
 @NgModule({
