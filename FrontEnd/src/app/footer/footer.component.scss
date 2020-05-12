@@ -94,7 +94,7 @@ $buttonDm : 50px;
 
 .break-contacts {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 
   align-items: center;
   justify-content: center;
@@ -103,5 +103,22 @@ $buttonDm : 50px;
 .break-contact {
   text-decoration: none;
   color: $textColor;
-  width: 20%;
+  width: 50%;
+}
+
+.break-email {
+  padding-right: 2%;
+  text-align: right;
+}
+
+.break-tel {
+  padding-left: 2%;
+  text-align: left;
+}
+
+@media screen and (max-width: 600px){
+  .break-contact {
+    text-align: center;
+    width: 100%;;
+  }
 }

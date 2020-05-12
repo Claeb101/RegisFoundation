@@ -17,8 +17,8 @@ export class FooterComponent implements OnInit {
     this.title = "Connect With Us";
 
     this.icons = [
-      {iconClassName: "facebook", link: "https://www.facebook.com/"}, 
-      {iconClassName: "twitter", link: "https://www.twitter.com/"}, 
+      {iconClassName: "facebook", link: "https://www.facebook.com/REGIS-Foundation-393538884407759/"}, 
+      {iconClassName: "twitter", link: "https://twitter.com/RegisAns/"}, 
       {iconClassName: "envelope", link: "mailto:2020ansregis@gmail.com"}, 
       {iconClassName: "phone", link: "tel:+918610452131"}, 
     ];
