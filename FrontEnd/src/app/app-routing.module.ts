@@ -1,3 +1,4 @@
+import { BrowserModule } from '@angular/platform-browser';
 import { LeadershipComponent } from './leadership/leadership.component';
 import { AboutComponent } from './about/about.component';
 import { HelpComponent } from './help/help.component';
@@ -18,7 +19,9 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [
+    RouterModule.forRoot(routes, { useHash: true })
+  ],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }

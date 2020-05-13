@@ -1,7 +1,6 @@
 import { TelMailPipe } from './footer/tel_mail_pipe';
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
-import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -31,9 +30,7 @@ import { LeadershipComponent } from './leadership/leadership.component';
     BrowserModule,
     AppRoutingModule
   ],
-  providers: [
-    {provide: LocationStrategy, useClass: HashLocationStrategy},
-  ],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
