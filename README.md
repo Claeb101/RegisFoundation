@@ -1,13 +1,10 @@
 # RegisFoundation
 Dr. ANS Regis Foundation
 
-## GitHub Pages
-All production artifacts are stored in the gh-pages branch.
-
 ## Setup
 The RegisFoundation repository contains 2 folders, FrontEnd and BackEnd. The front-end folder contains the angular application.
 Please refer to the README.md file in FrontEnd for more information.
-Note: The BackEnd folder is still in development.
+Note: The BackEnd folder is still in development, and wil be used to run the production front-end artifacts in ./FrontEnd/dist.
 
 ## Cloning
 
