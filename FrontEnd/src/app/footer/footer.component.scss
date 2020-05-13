@@ -1,7 +1,13 @@
 @use 'sass:list';
 @import 'src/styles.scss';
 
-$textColor: list.nth($themeColors, 6);
+$textColor: $mainTextColor2;
+
+.fade-out {
+  background-image: linear-gradient(to bottom, list.nth($themeColors, 2), white);
+  min-height: 100px;
+}
+
 .footer {
   background-color: list.nth($themeColors, 2);
   overflow: hidden;
@@ -25,7 +31,7 @@ $textColor: list.nth($themeColors, 6);
 
 $buttonDm : 50px;
 .social-button {
-  border: 0px solid;
+  border: 2px solid $textColor;
   border-radius: $buttonDm / 2;
   width: $buttonDm;
   height: $buttonDm;

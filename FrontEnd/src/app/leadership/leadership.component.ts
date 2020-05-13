@@ -22,7 +22,7 @@ export class LeadershipComponent implements OnInit {
     let pics_dir = "assets/MemberPics/";
     this.defaultPNG = pics_dir + "person.jpg"
 
-    this.title = "Meet The Team";
+    this.title = "Hi There!";
     this.members = [
       {image_path: pics_dir + "Christy.jpg", description: "A post graduate in women's studies and education. She has vast experience in teaching and working with school students. She has been recognized as an illustrious teacher through an award by Justice Shiv Raj V. Patil Foundation, Madurai, in 2019. She is also a well recognized trainer in parenting, child centered education and child rights.", name: "Christy S. JohnPeter", role: "Mentor"},
       {image_path: pics_dir + "MrStephen.png", description: "Currently working as Asst. Professor and Head of the Department of Social Work in Chennai. He started his career as a young professional of CAPART, Ministry of Rural Development, Govt. of India. He has been involved in migration research since 2012.", name: "Antony Stephen", role: "Mentor"},

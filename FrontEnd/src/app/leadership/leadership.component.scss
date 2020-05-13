@@ -4,7 +4,6 @@
 $buttonColor: list.nth($themeColors, 4);
 
 .bg {
-    background-color: steelblue;
     padding-bottom: 2%;
 }
 
@@ -63,7 +62,7 @@ $focusColor: list.nth($themeColors, 2);
 }
 
 .cover-description {
-    color: $mainTextColor;
+    color: list.nth($themeColors, 4);
 
     text-align: left;
 

@@ -22,7 +22,8 @@ export class NavbarComponent implements OnInit {
       {link: "/about", display: "About"},
       {link: "/leadership", display: "Leadership"},
       {link: "/donate", display: "Donate"},
-      {link: "/help", display: "Help"},
+      {link: "/contact", display: "Contact"},
+      //{link: "/help", display: "Help"},
     ];
     this.navBarParts = ar;
 

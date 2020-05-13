@@ -1,8 +1,17 @@
 @use 'sass:list';
 
 /* You can add global styles to this file, and also import other style files */
-$mainTextColor : rgb(255, 255, 255);
-$themeColors : #4682B4, #FE938C, #F1AB86, #EAD2AC, #49BEAA, $mainTextColor;
+
+$mainTextColor : rgb(55,92,137);
+$mainTextColor2 : rgb(255, 255, 255);
+$themeColors : rgb(144,164,189), rgb(55,92,137), rgb(144,164,189), rgb(255, 255, 255), #49BEAA, $mainTextColor;
+$gradient1 : linear-gradient(to bottom, list.nth($themeColors, 2), list.nth($themeColors, 4));
+
+.grad1-holder {
+    background-image: $gradient1;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
 
 .display-1 {
     font-size: 5.8594vw;
@@ -14,5 +23,5 @@ h1 {
 }
 
 .body {
-    background-color: black;
+    background-color: list.nth($themeColors, 2);
 }

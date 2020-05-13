@@ -8,7 +8,11 @@ $navColor: list.nth($themeColors, 2);
 }
 
 .navbar-text, .nav-link {
-    color: $mainTextColor;
+    color: $mainTextColor2;
+}
+
+.navbar-text {
+    line-height: normal;
 }
 
 .nav-logo {
@@ -27,10 +31,6 @@ $navColor: list.nth($themeColors, 2);
 
 $min_height: 60px;
 .bar {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    min-height: $min_height;
 
     overflow: hidden;
     position: sticky;
@@ -74,11 +74,12 @@ $min_height: 60px;
 }
 
 .nav-item:hover {
-    background-color: list.nth($themeColors, 3);
+    background-color: list.nth($themeColors, 1);
 }
 
 @media screen and(max-width: 900px){
     .bar {
+        min-height: $min_height;
         display: block;
     }
 
