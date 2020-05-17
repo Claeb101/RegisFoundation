@@ -7,14 +7,25 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  backdrop : string;
+  regisImages : string[];
+  regisCurrent : number;
+
   title : string;
   width : Number;
   height : Number;
 
   constructor() {
     this.title= Globals.mainTitle;
-    this.backdrop="assets/IntroBG.jpg";
+
+    let imgPath : string = "assets/RegisPics/";
+    
+    this.regisImages = [
+      imgPath + "Regis1.jpg",
+      imgPath + "Regis2.jpg",
+      imgPath + "Regis3.jpg"
+    ]
+    this.regisCurrent = 1;
+
     this.width = 3840;
     this.height = 2160;
   }
