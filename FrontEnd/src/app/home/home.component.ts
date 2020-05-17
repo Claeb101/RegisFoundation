@@ -9,6 +9,10 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
   regisImages : string[];
   regisCurrent : number;
+  galPos : number;
+
+  isPrev : boolean;
+  isNext : boolean;
 
   title : string;
   width : Number;
@@ -28,9 +32,21 @@ export class HomeComponent implements OnInit {
 
     this.width = 3840;
     this.height = 2160;
+
+    this.isPrev = false;
+    this.isNext = false;
+
+    this.galPos = 0;
   }
 
   ngOnInit(): void {
   }
 
+  prev(){
+    this.galPos += 100;
+  }
+
+  next(){
+    this.galPos -= 100;
+  }
 }
