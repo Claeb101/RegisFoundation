@@ -5,7 +5,6 @@ import { HashLocationStrategy, LocationStrategy } from '@angular/common';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
-import { WelcomeComponent } from './home/welcome/welcome.component';
 import { NavbarComponent } from './navbar/navbar.component';
 import { HomeComponent } from './home/home.component';
 import { HelpComponent } from './help/help.component';
@@ -18,7 +17,6 @@ import { ContactComponent } from './contact/contact.component';
 @NgModule({
   declarations: [
     AppComponent,
-    WelcomeComponent,
     NavbarComponent,
     HomeComponent,
     HelpComponent,
