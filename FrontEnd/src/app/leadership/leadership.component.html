@@ -7,10 +7,10 @@
             <button *ngFor="let roleFilter of roleFilters" class="filter-button" id={{roleFilter.id}} (click)="filterRole(roleFilter.filter)">{{roleFilter.displayName}}</button>
         </div>
         <div class="row">
-            <div *ngFor="let member of filteredMembers" class="col-lg-3 col-md-6 col-sm-12 member">
+            <div *ngFor="let member of filteredMembers; index as i" class="col-lg-3 col-md-6 col-sm-12 member">
                 <div class="member-card">
-                    <div class="image-holder">
-                        <!-- <button class="des-toggle"><i class="fa "></i></button> -->
+                    <button [ngClass]="{'des-toggle': true, 'reveal': member.isRevealed}" (click)="toggleDes(i)"><i class="fas fa-plus"></i></button>
+                    <div [ngClass]="{'image-holder': true, 'reveal': member.isRevealed}">
                         <img src={{member.image_path}} alt="{{defaultPNG}}" class="pfp">
 
                         <div class="hover-cover">

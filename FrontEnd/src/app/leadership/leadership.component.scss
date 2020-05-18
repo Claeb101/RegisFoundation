@@ -14,7 +14,8 @@ $buttonColor: list.nth($themeColors, 4);
     background-color: $buttonColor;
     border: 0px solid;
     border-radius: 5px;
-    margin: 10px 10px 25px 5%;
+
+    margin-bottom: 10px;
 }
 
 .filter-button {
@@ -28,6 +29,8 @@ $buttonColor: list.nth($themeColors, 4);
 
     transition: background-color 0.2s ease-in-out;
     transition: border 0.2s ease-in-out;
+
+    text-align: center;
 }
 
 $selectedColor: list.nth($themeColors, 3);
@@ -84,21 +87,42 @@ $focusColor: list.nth($themeColors, 2);
 }
 
 .member-card {
+    position: relative;
     box-sizing: border-box;
+    //border: 1px solid red;
 }
 
-.image-holder:hover .hover-cover {
+.des-toggle {
+    position: absolute;
+    z-index: 2;
+
+    background: transparent;
+    border: 0px solid blue;
+    outline: 0;
+    color: list.nth($themeColors, 2);
+
+    transition: all 0.5s ease-in-out;
+}
+
+.des-toggle.reveal {
+    transform: rotateZ(135deg) scale(1.5);
+    color: white;
+}
+
+// Hover
+.reveal .hover-cover {
     opacity: 1;
 }
 
-.image-holder:hover .cover-description {
+.reveal .cover-description {
     margin-top: 20%;
 }
 
-.image-holder:hover .pfp{
+.reveal .pfp{
     opacity: 0.1;
 }
 
+// Lower Description
 .primary-description {
     margin-top: 10px;
 }
