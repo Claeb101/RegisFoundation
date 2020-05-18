@@ -1,8 +1,10 @@
 export class SocialIcon{
-    iconClassName : string;
+    iconClass : string;
+    iconName : string;
     link : string;
-    constructor(path : string, link : string){
-        this.iconClassName = path;
+    constructor(iName : string, iClass : string, link : string){
+        this.iconClass = iClass;
+        this.iconName = iName;
         this.link = link;
     }
 }

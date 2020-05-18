@@ -17,10 +17,10 @@ export class FooterComponent implements OnInit {
     this.title = "Connect With Us";
 
     this.icons = [
-      {iconClassName: "facebook", link: "https://www.facebook.com/REGIS-Foundation-393538884407759/"}, 
-      {iconClassName: "twitter", link: "https://twitter.com/RegisAns/"}, 
-      {iconClassName: "envelope", link: "mailto:2020ansregis@gmail.com"}, 
-      {iconClassName: "phone", link: "tel:+918610452131"}, 
+      {iconClass: "fab", iconName: "fa-facebook-f", link: "https://www.facebook.com/REGIS-Foundation-393538884407759/"}, 
+      {iconClass: "fa", iconName: "fa-twitter", link: "https://twitter.com/RegisAns/"}, 
+      {iconClass: "fas", iconName: "fa-envelope", link: "mailto:2020ansregis@gmail.com"}, 
+      {iconClass: "fas", iconName: "fa-phone", link: "tel:+918610452131"}, 
     ];
 
     this.address = "555 Mandhali Vilakku Road, Kalaiyarkoil, Sivagangai, Tamil Nadu, India 630551"

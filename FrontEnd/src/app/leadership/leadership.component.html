@@ -1,9 +1,8 @@
 <app-navbar></app-navbar>
 <div class="grad1-holder">
+    
     <section class="bg container-fluid">
         <h1 class="mainTitle display-1 text-center" data-aos="fade-up">{{title}}</h1>
-    </section>
-    <section class="bg container-fluid">
         <div class="role-filters" data-aos="fade-right">
             <button *ngFor="let roleFilter of roleFilters" class="filter-button" id={{roleFilter.id}} (click)="filterRole(roleFilter.filter)">{{roleFilter.displayName}}</button>
         </div>
@@ -11,6 +10,7 @@
             <div *ngFor="let member of filteredMembers" class="col-lg-3 col-md-6 col-sm-12 member">
                 <div class="member-card">
                     <div class="image-holder">
+                        <!-- <button class="des-toggle"><i class="fa "></i></button> -->
                         <img src={{member.image_path}} alt="{{defaultPNG}}" class="pfp">
 
                         <div class="hover-cover">
