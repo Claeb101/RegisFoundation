@@ -28,7 +28,7 @@ export class HomeComponent implements OnInit {
       imgPath + "Regis2.jpg",
       imgPath + "Regis3.jpg"
     ]
-    this.regisCurrent = 1;
+    this.regisCurrent = 0;
 
     this.width = 3840;
     this.height = 2160;
@@ -43,10 +43,37 @@ export class HomeComponent implements OnInit {
   }
 
   prev(){
-    this.galPos += 100;
+    if(this.regisCurrent > 0){
+      this.galPos += 98.9;
+      this.regisCurrent -= 1;
+    } else {
+      for(let i = 0; i < this.regisImages.length - 1; i++){
+        this.next();
+      }
+    }
   }
 
   next(){
-    this.galPos -= 100;
+    if(this.regisCurrent < this.regisImages.length - 1){
+      this.galPos -= 98.9;
+      this.regisCurrent += 1;
+    } else {
+      for(let i = 0; i < this.regisImages.length - 1; i++){
+        this.prev();
+      }
+    }
+  }
+
+  select(x : number){
+    let move = x - this.regisCurrent;
+    if(move > 0){
+      for(let i = 0; i < move; i++){
+        this.next();
+      }
+    } else {
+      for(let i = 0; i < -move; i++){
+        this.prev();
+      }
+    }
   }
 }

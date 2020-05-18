@@ -5,15 +5,19 @@
             <h1 class="mainTitle display-1">{{title}}</h1>
         </div>
     </div>
+    <hr class="break">
     <div class="gal-container">
-      <div class="gal-nav">
-        <button class="prev button" (click)="prev()"><i class="fa fa-chevron-left"></i></button>
-        <button class="next button" (click)="next()"><i class="fa fa-chevron-right"></i></button>
-      </div>
+      <button class="prev button" (click)="prev()"><i class="fa fa-chevron-left"></i></button>
+      <button class="next button" (click)="next()"><i class="fa fa-chevron-right"></i></button>
       <div class="gallery-wrapper">
         <div class="gallery" [ngStyle]="{'transform': 'translateX(' + galPos + 'vw)'}">
           <div *ngFor="let img of regisImages" class="gal-item" [ngStyle]="{'background-image': 'url(' + img + ')'}">
           </div>
+        </div>
+      </div>
+      <div class="gal-dots">
+        <div *ngFor="let img of regisImages; index as i">
+          <button [ngClass]="{'dot': true, 'selected': i==regisCurrent}" (click)="select(i)"><i class="fa fa-circle"></i></button>
         </div>
       </div>
   </div>
