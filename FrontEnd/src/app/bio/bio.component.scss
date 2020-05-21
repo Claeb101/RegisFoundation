@@ -1,0 +1,124 @@
+@use 'sass:list';
+@use 'sass:color';
+@import "src/styles.scss";
+
+.grad1-holder {
+    padding: 5% 20% 5% 15%;
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+}
+
+.extra-holder {
+    width: 25%;
+    padding-right: 2rem;
+}
+
+.headshot {
+    max-width: 100%;
+    max-height: 100%;
+    box-shadow: 0 0 5px 2px list.nth($themeColors, 2);
+}
+
+.facts {
+    background-color: white;
+    margin-top: 2rem;
+    padding: 2% 5%;
+    text-align: center;
+
+    box-shadow: 0 0 5px 2px list.nth($themeColors, 2);
+}
+
+.text-holder {
+    width: 75%;
+}
+
+.break {
+    border-top: 1px solid white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.quote {
+    color: white;
+    font-style: italic;
+}
+
+$outline: list.nth($themeColors, 4);
+#bio-word {
+    color: list.nth($themeColors, 2);
+    text-shadow: -1px -1px 0px $outline, 1px -1px 0px $outline, -1px 1px 0px $outline, 1px 1px 0px $outline;
+}
+
+.topic,.info,.title,.fact {
+    text-align: left;
+
+    word-break: break-word;
+    overflow-wrap: break-word;
+    font-family: "Open Sans", sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.65rem;
+    letter-spacing: inherit;
+    
+}
+
+.topic {
+    font-weight: 800;
+}
+
+.title {
+    font-size: 28px;
+}
+
+@media screen and(max-width: 1000px) {
+    .grad1-holder {
+        flex-flow: column;
+        padding-right: 15%;
+        
+    }
+
+    .extra-holder {
+        display: flex;
+        flex-flow: column nowrap;
+
+        align-items: center;
+
+        width: 100%;
+        height: 100%;
+        padding: 0;
+
+        // border: 1px solid green;
+
+        text-align: center;
+    }
+
+    .text-holder {
+        width: 100%;
+        text-align: center;
+        margin-top: 2rem;
+    }
+
+    .title {
+        text-align: center;
+    }
+
+    .headshot {
+        width: 400px;
+    }
+
+    .facts {
+        width: 300px;
+    }
+}
+
+@media screen and (max-width: 450px){
+    .facts {
+        width: 100%;
+    }
+
+    .facts-holder {
+        width: 100%;
+    }
+}

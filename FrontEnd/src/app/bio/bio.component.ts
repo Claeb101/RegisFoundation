@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./bio.component.scss']
 })
 export class BioComponent implements OnInit {
-
-  constructor() { }
+  headshot: string;
+  constructor() {
+    this.headshot = "assets/RegisPics/Regis3.jpg"
+  }
 
   ngOnInit(): void {
   }
