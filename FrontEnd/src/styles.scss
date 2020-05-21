@@ -13,9 +13,23 @@ $gradient1 : linear-gradient(to bottom, list.nth($themeColors, 2), list.nth($the
     background-attachment: fixed;
 }
 
-.display-1 {
-    font-size: 5.8594vw;
+.main-1, .main-3 {
+    font-size: 100px;
+    font-weight: 300;
+    line-height: 1.2;
+    margin-bottom: 0.5rem;
+
     color: list.nth($themeColors, 4);
+}
+
+.main-3 {
+    font-size: 60px;
+}
+
+@media screen and (max-width: 1000px){
+    .main-1 {
+        font-size: 60px;
+    }
 }
 
 h1 {
@@ -25,3 +39,10 @@ h1 {
 .body {
     background-color: list.nth($themeColors, 2);
 }
+
+/*
+Font-weight 300
+lineheight 1.2
+margin-bottom .5rem
+
+*/

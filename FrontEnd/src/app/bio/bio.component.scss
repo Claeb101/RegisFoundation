@@ -51,6 +51,7 @@ $outline: list.nth($themeColors, 4);
 }
 
 .topic,.info,.title,.fact {
+    // color: rgb(68, 68, 68);
     text-align: left;
 
     word-break: break-word;
@@ -69,6 +70,7 @@ $outline: list.nth($themeColors, 4);
 }
 
 .title {
+    color: white;
     font-size: 28px;
 }
 

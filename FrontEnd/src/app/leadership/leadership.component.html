@@ -2,7 +2,7 @@
 <div class="grad1-holder">
     
     <section class="bg container-fluid">
-        <h1 class="mainTitle display-1 text-center" data-aos="fade-up">{{title}}</h1>
+        <h1 class="mainTitle main-1 text-center" data-aos="fade-up">{{title}}</h1>
         <div class="role-filters" data-aos="fade-right">
             <button *ngFor="let roleFilter of roleFilters" class="filter-button" id={{roleFilter.id}} (click)="filterRole(roleFilter.filter)">{{roleFilter.displayName}}</button>
         </div>

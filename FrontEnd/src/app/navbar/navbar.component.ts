@@ -1,5 +1,5 @@
 import { Globals } from './../globals';
-import { Component, OnInit, ElementRef, ViewChild, Renderer2 } from '@angular/core';
+import { Component, OnInit} from '@angular/core';
 import { NavPart} from './navPart';
 
 @Component({
@@ -14,10 +14,7 @@ export class NavbarComponent implements OnInit {
 
   isToggled: Boolean;
 
-  @ViewChild('holder') 
-  private holder: ElementRef;
-
-  constructor(private renderer: Renderer2) {
+  constructor() {
     let ar : NavPart[] = [
       {link: "/about", display: "About"},
       {link: "/bio", display: "Bio"},
@@ -36,12 +33,15 @@ export class NavbarComponent implements OnInit {
 
   toggle(){
     this.isToggled = !this.isToggled;
-    if(this.isToggled){
-      console.log("Toggle", "block");
-      this.renderer.setStyle(this.holder.nativeElement, 'display', 'block');
+  }
+
+  getDisp(){
+    if(window.innerWidth >= 900) {
+      return "flex";
+    } else if(this.isToggled){
+      return "block";
     } else {
-      console.log("Toggle", "none")
-      this.renderer.setStyle(this.holder.nativeElement, 'display', 'none');
+      return "none";
     }
   }
 

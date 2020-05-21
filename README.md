@@ -1,5 +1,5 @@
 # RegisFoundation
-Dr. ANS Regis Foundation
+Dr. A.N.S. Regis Foundation
 
 ## Setup
 The RegisFoundation repository contains 2 folders, FrontEnd and BackEnd. The front-end folder contains the angular application.

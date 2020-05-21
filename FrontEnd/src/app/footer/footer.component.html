@@ -1,6 +1,6 @@
 <section class="container-fluid footer">
     <div class="social">
-        <h1 class="social-text display-3">{{title}}</h1>
+        <h1 class="social-text main-3">{{title}}</h1>
         <div class="social-icons">
             <a *ngFor="let icon of icons" href={{icon.link}} target="_blank">
                 <button type="button" [ngClass]="'social-button btn-' + icon.iconName"><i [ngClass]="icon.iconClass + ' ' + icon.iconName"></i></button>

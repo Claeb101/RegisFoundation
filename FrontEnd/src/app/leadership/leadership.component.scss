@@ -27,8 +27,7 @@ $buttonColor: list.nth($themeColors, 4);
 
     opacity: 1;
 
-    transition: background-color 0.2s ease-in-out;
-    transition: border 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out;
 
     text-align: center;
 }
@@ -38,13 +37,15 @@ $focusColor: list.nth($themeColors, 2);
 .filter-button:hover, .filter-button:focus {
     background-color: $selectedColor;
     border-color: $selectedColor;
+    color: list.nth($themeColors, 4);
+    outline: none;
 }
 
 .filter-button:focus {
-    background-color: $focusColor;
     border-color: $focusColor;
-    outline: none;
+    background-color: $focusColor;
 }
+
 /****************************************/
 .pfp {
     width: 100%;
@@ -110,11 +111,16 @@ $focusColor: list.nth($themeColors, 2);
 .fas.fa-plus-circle {
     transform: scale(1.5);
     color: list.nth($themeColors, 2);
-    transition: all 0.5s ease-in-out;
+    transition: transform 0.5s ease-in-out;
+    transition: color 0.5s ease-in-out;
 }
 
 .des-toggle.reveal .fas.fas.fa-plus-circle {
     color: list.nth($themeColors, 4);
+}
+
+.des-toggle:hover .fas.fas.fa-plus-circle {
+    color: list.nth($themeColors, 1);
 }
 
 // Hover

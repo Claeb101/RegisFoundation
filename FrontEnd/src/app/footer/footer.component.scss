@@ -1,10 +1,12 @@
+@use 'sass:color';
 @use 'sass:list';
 @import 'src/styles.scss';
 
 $textColor: $mainTextColor2;
 
+$start: list.nth($themeColors, 2);
 .fade-out {
-  background-image: linear-gradient(to bottom, list.nth($themeColors, 2), white);
+  background-image: linear-gradient(to bottom, $start 0%, color.mix($start, white, $weight: 75%) 50%, white 100%);
   min-height: 100px;
 }
 

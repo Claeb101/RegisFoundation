@@ -48,6 +48,13 @@ $min_height: 60px;
     justify-self: flex-end;
     display: none;
     border: 0px;
+    outline: 0;
+
+    transition: transform 0.25s ease-in-out;
+
+    &.selected {
+        transform: rotate(90deg);
+    }
 }
 
 .fa-bars {
@@ -61,6 +68,7 @@ $min_height: 60px;
     justify-content: flex-end;
 }
 
+$animate: all 0.2s ease-in-out;
 .nav-item {
     height: $min_height;
     margin-right: 0;
@@ -71,10 +79,47 @@ $min_height: 60px;
     flex-flow: row nowrap;
     align-items: center;
     justify-content: center;
-}
 
-.nav-item:hover {
-    background-color: list.nth($themeColors, 1);
+    .nav-link {
+        position: relative;
+        text-align: center;
+        transition: $animate;
+
+        &:before,&:after {
+            content: "";
+            position: absolute;
+            bottom: 0px;
+            width: 0px;
+            height: 3px;
+
+            
+            transition: $animate;
+            transition-duration: 0.5s;
+            opacity: 0;
+            background-color: list.nth($themeColors, 1);
+        }
+
+        // Type of UNDERLINE margin
+        &:before {
+            left: 50%;
+        }
+
+        &:after {
+            right: 50%
+        }
+    }
+
+    &:hover {
+        cursor: pointer;
+        .nav-link {
+            // Type of underline anim
+            &:before, &:after {
+                width: 40%;
+                opacity: 1;
+                background-color: list.nth($themeColors, 4);
+            }
+        }
+    }
 }
 
 @media screen and(max-width: 900px){
@@ -142,5 +187,19 @@ $min_height: 60px;
     .nav-item {
         margin-right: 0;
         margin-left: 0;
+    }
+}
+
+@media screen and(max-width: 400px){
+    .main-item {
+        display: block;
+    }
+
+    .navbar-brand {
+        width: 100%;
+    }
+
+    .toggler {
+        width: 100%;
     }
 }
