@@ -68,6 +68,8 @@ export class LeadershipComponent implements OnInit {
       if(this.currentRoleFilter == "All" || member.role.includes(this.currentRoleFilter)){
         this.filteredMembers.push(member);
       }
+
+      member.isRevealed = false;
     }
   }
 

@@ -99,14 +99,22 @@ $focusColor: list.nth($themeColors, 2);
     background: transparent;
     border: 0px solid blue;
     outline: 0;
-    color: list.nth($themeColors, 2);
 
     transition: all 0.5s ease-in-out;
 }
 
 .des-toggle.reveal {
-    transform: rotateZ(135deg) scale(1.5);
-    color: white;
+    transform: rotateZ(135deg);
+}
+
+.fas.fa-plus-circle {
+    transform: scale(1.5);
+    color: list.nth($themeColors, 2);
+    transition: all 0.5s ease-in-out;
+}
+
+.des-toggle.reveal .fas.fas.fa-plus-circle {
+    color: list.nth($themeColors, 4);
 }
 
 // Hover

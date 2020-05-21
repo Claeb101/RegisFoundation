@@ -13,6 +13,7 @@ import { DonateComponent } from './donate/donate.component';
 import { FooterComponent } from './footer/footer.component';
 import { LeadershipComponent } from './leadership/leadership.component';
 import { ContactComponent } from './contact/contact.component';
+import { BioComponent } from './bio/bio.component';
 
 @NgModule({
   declarations: [
@@ -26,6 +27,7 @@ import { ContactComponent } from './contact/contact.component';
     LeadershipComponent,
     TelMailPipe,
     ContactComponent,
+    BioComponent,
   ],
   imports: [
     BrowserModule,

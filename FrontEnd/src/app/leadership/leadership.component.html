@@ -9,7 +9,7 @@
         <div class="row">
             <div *ngFor="let member of filteredMembers; index as i" class="col-lg-3 col-md-6 col-sm-12 member">
                 <div class="member-card">
-                    <button [ngClass]="{'des-toggle': true, 'reveal': member.isRevealed}" (click)="toggleDes(i)"><i class="fas fa-plus"></i></button>
+                    <button [ngClass]="{'des-toggle': true, 'reveal': member.isRevealed}" (click)="toggleDes(i)"><i class="fas fa-plus-circle"></i></button>
                     <div [ngClass]="{'image-holder': true, 'reveal': member.isRevealed}">
                         <img src={{member.image_path}} alt="{{defaultPNG}}" class="pfp">
 

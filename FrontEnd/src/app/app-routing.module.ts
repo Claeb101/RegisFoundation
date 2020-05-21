@@ -1,3 +1,4 @@
+import { BioComponent } from './bio/bio.component';
 import { ContactComponent } from './contact/contact.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { LeadershipComponent } from './leadership/leadership.component';
@@ -17,6 +18,7 @@ const routes: Routes = [
   { path: 'help', component: HelpComponent},
   { path: 'leadership', component: LeadershipComponent},
   { path: 'contact', component: ContactComponent},
+  { path: 'bio', component: BioComponent},
   { path: '**', redirectTo: 'home' }
 ];
 
