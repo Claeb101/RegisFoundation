@@ -36,7 +36,7 @@ import { NotFoundComponent } from './not-found/not-found.component';
     AppRoutingModule
   ],
   providers: [
-    {provide: LocationStrategy, useClass:HashLocationStrategy},
+    //{provide: LocationStrategy, useClass:HashLocationStrategy},
   ],
   bootstrap: [AppComponent]
 })

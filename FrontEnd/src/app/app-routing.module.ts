@@ -12,14 +12,14 @@ import { RouterModule, Routes } from '@angular/router';
 
 
 const routes: Routes = [
-  { path: 'home', component: HomeComponent },
-  { path: 'donate', component: DonateComponent },
-  { path: 'about', component: AboutComponent },
-  { path: 'help', component: HelpComponent },
-  { path: 'leadership', component: LeadershipComponent },
-  { path: 'contact', component: ContactComponent },
-  { path: 'bio', component: BioComponent },
-  { path: '404', component: NotFoundComponent },
+  { path: 'home', pathMatch: 'full', component: HomeComponent },
+  { path: 'donate', pathMatch: 'full', component: DonateComponent },
+  { path: 'about', pathMatch: 'full', component: AboutComponent },
+  { path: 'help', pathMatch: 'full', component: HelpComponent },
+  { path: 'leadership', pathMatch: 'full', component: LeadershipComponent },
+  { path: 'contact', pathMatch: 'full', component: ContactComponent },
+  { path: 'bio', pathMatch: 'full', component: BioComponent },
+  { path: '404', pathMatch: 'full', component: NotFoundComponent },
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   { path: '**', redirectTo: '404', pathMatch: 'full' },
 ];
