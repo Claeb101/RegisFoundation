@@ -10,8 +10,8 @@
     </div>
     
     <div class="link-holder" [ngStyle]="{'display':getDisp()}"#holder>
-      <div class="nav-item" *ngFor="let nav of navBarParts">
-        <a class="nav-link" routerLink={{nav.link}}>{{nav.display}}</a>
-      </div>
+      <a class="nav-item" *ngFor="let nav of navBarParts" routerLink={{nav.link}}>
+        <div class="nav-link">{{nav.display}}</div>
+      </a>
     </div>
 </div>
