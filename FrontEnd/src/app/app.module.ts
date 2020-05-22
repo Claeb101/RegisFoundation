@@ -14,6 +14,7 @@ import { FooterComponent } from './footer/footer.component';
 import { LeadershipComponent } from './leadership/leadership.component';
 import { ContactComponent } from './contact/contact.component';
 import { BioComponent } from './bio/bio.component';
+import { NotFoundComponent } from './not-found/not-found.component';
 
 @NgModule({
   declarations: [
@@ -28,6 +29,7 @@ import { BioComponent } from './bio/bio.component';
     TelMailPipe,
     ContactComponent,
     BioComponent,
+    NotFoundComponent,
   ],
   imports: [
     BrowserModule,
