@@ -2,6 +2,7 @@ import { Component } from '@angular/core';
 import * as AOS from 'aos';
 import { Router, NavigationEnd } from '@angular/router';
 import { filter } from 'rxjs/operators';
+import { Title } from '@angular/platform-browser';
 
 declare var gtag;
 
@@ -11,8 +12,11 @@ declare var gtag;
   styleUrls: ['./app.component.scss']
 })
 export class AppComponent {
-  title = 'Regis';
-  constructor(router: Router) {
+  title = 'Dr. A.N.S. Regis Foundation';
+  constructor(router: Router, private titleService: Title) {
+
+    this.titleService.setTitle("Dr. A.N.S. Regis Foundation");
+
     const navEndEvents = router.events.pipe(
       filter(event => event instanceof NavigationEnd),
     );
