@@ -16,6 +16,7 @@ export class NavbarComponent implements OnInit {
 
   constructor() {
     let ar : NavPart[] = [
+      {link: "/home", display: "Home"},
       {link: "/about", display: "About"},
       {link: "/bio", display: "Bio"},
       {link: "/leadership", display: "Leadership"},
