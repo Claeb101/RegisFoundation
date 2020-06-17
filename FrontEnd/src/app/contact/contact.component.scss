@@ -1,2 +1,7 @@
 @use 'sass:list';
 @import 'src/styles.scss';
+
+.holder {
+    text-align: center;
+    background-color: list.nth($themeColors, 2);
+}

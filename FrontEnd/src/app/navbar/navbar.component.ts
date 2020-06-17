@@ -26,7 +26,7 @@ export class NavbarComponent implements OnInit {
     ];
     this.navBarParts = ar;
 
-    this.logoSrc = "assets/Logo/LogoCrop2.png";
+    this.logoSrc = "assets/Logo/L2C3.png";
 
     this.mainTitle = Globals.mainTitle;
     this.isToggled = false;

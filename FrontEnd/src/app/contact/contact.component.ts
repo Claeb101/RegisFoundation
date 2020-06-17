@@ -6,8 +6,10 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./contact.component.scss']
 })
 export class ContactComponent implements OnInit {
-
-  constructor() { }
+  logo: string;
+  constructor() {
+    this.logo = "assets/Logo/L2C1.png";
+  }
 
   ngOnInit(): void {
   }

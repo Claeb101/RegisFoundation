@@ -18,6 +18,9 @@ $navColor: list.nth($themeColors, 2);
 .nav-logo {
     max-width: 50px;
     height: auto;
+
+    border: 0.1rem solid white;
+    margin-left: 0.25rem;
 }
 
 .navbar-text {
