@@ -39,7 +39,7 @@ export class AboutComponent implements OnInit {
       {date: "...", description: "The Dr. A.N.S. Regis Foundation was formed as a public charitable non-profit trust."},
       {date: "2017", description: "80 students studying in 10th standard at Kalaiyarkoil, Sivagangai District, Government Higher Secondary School were provided with an advanced learners dictionary."},
       {date: "2017", description: "30 children learning at the Govt. primary school in Veterneri village, Sivagangai-district were given a colorful dresses."},
-      {date: "2019", description: "125 students studying in 11th standard at Kavarapatti Village, Kudukottai District, Government Higher Secondary School were provided with an advanced learners dictionary."},
+      {date: "2019", description: "125 students studying in 11th standard at Kavarapatti Village, Pudukkottai District, Government Higher Secondary School were provided with an advanced learners dictionary."},
       {date: "2020", description: "We plan to reach out to even more children."},
     ]
 
