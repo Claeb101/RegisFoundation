@@ -3,7 +3,8 @@
         <h1 class="social-text main-3">{{title}}</h1>
         <div class="social-icons">
             <a *ngFor="let icon of icons" href={{icon.link}} target="_blank">
-                <button type="button" [ngClass]="'social-button btn-' + icon.iconName"><i [ngClass]="icon.iconClass + ' ' + icon.iconName"></i></button>
+                <button type="button" [ngClass]="'social-button btn-' + icon.iconName"><i
+                        [ngClass]="icon.iconClass + ' ' + icon.iconName"></i></button>
             </a>
         </div>
     </div>
@@ -15,8 +16,8 @@
             <a class="break-contact break-tel" href={{phoneNumber}}>Mobile: {{phoneNumber | telMail}}</a>
         </h6>
     </div>
-    <div class="fade-out"></div>
+    <!-- <div class="fade-out"></div> -->
+    <div class="attrib">
+        <p class="">Made with 💖 by <a href="https://arulandu.com" target="_blank">Alvan Caleb Arulandu</a></p>
+    </div>
 </section>
-
-
-

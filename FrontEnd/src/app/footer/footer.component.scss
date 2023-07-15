@@ -10,6 +10,20 @@ $start: list.nth($themeColors, 2);
   min-height: 100px;
 }
 
+.attrib {
+  border-width: 1px 0px 0px 0px;
+  border-style: solid;
+  border-color: #ffffff;
+  color: #ffffff;
+  text-align: center;
+  padding-top: 1rem;
+
+  a {
+    color: #ffffff;
+    text-decoration: underline;
+  }
+}
+
 .footer {
   background-color: list.nth($themeColors, 2);
   overflow: hidden;
