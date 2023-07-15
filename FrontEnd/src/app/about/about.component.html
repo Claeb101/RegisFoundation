@@ -73,7 +73,7 @@
                                 <div class="event-info">
                                     <h1>{{event.date}}</h1>
                                     <div *ngIf="event.img_path && event.img_path.length > 0">
-                                      <img src={{event.img_path}} class="timeline-img">
+                                        <img src={{event.img_path}} class="timeline-img">
                                     </div>
                                     <p>{{event.description}}</p>
                                 </div>
@@ -90,7 +90,9 @@
                             <div class="event-bubble" data-aos="fade-up">
                                 <div class="event-info">
                                     <h1>{{event.date}}</h1>
-
+                                    <div *ngIf="event.img_path && event.img_path.length > 0">
+                                        <img src={{event.img_path}} class="timeline-img">
+                                    </div>
                                     <p>{{event.description}}</p>
                                 </div>
                                 <div class="arrow"></div>

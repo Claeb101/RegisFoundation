@@ -125,7 +125,7 @@ $animate: all 0.2s ease-in-out;
     }
 }
 
-@media screen and(max-width: 900px){
+@media screen and (max-width: 900px){
     .bar {
         min-height: $min_height;
         display: block;
@@ -147,8 +147,8 @@ $animate: all 0.2s ease-in-out;
     }
 }
 
-@media screen and(min-width: 900px){
-    .nav-logo {
+@media screen and (min-width: 900px){
+    .nav-logo { 
         max-width: 50px;
         height: auto;
     }
@@ -193,7 +193,7 @@ $animate: all 0.2s ease-in-out;
     }
 }
 
-@media screen and(max-width: 400px){
+@media screen and (max-width: 400px){
     .main-item {
         display: block;
     }
