@@ -74,7 +74,7 @@ $outline: list.nth($themeColors, 4);
     font-size: 28px;
 }
 
-@media screen and(max-width: 1000px) {
+@media screen and (max-width: 1000px) {
     .grad1-holder {
         flex-flow: column;
         padding-right: 15%;
