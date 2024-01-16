@@ -44,7 +44,7 @@ export class AboutComponent implements OnInit {
       { date: "February 5, 2023", img_path: "assets/Timeline/20230205.jpg", description: "Renovation work at Regis clinic in progress." },
       { date: "February 12, 2023", img_path: "", description: "The top Scorers in 10th and 12 th std, Subathradevi, Varunkumar, Harini, Elango, and Sarani were  given  a cash award of Rs.1000 and an AL Dictionary  during  the CREA School  Annual day  on 28.01.23." },
       { date: "May 13, 2023", img_path: "assets/Timeline/20230513.jpg", description: "Renovation work  at Dr.Regis clinic  at it's  final phase. Kindly  Bless  this effort." },
-      { date: "December 13, 2023", img_path: "assets/Timeline/20231213.jpeg", description: "Dr. Naveena and Dr. John Peter visited Suriyur Village Higher Secondary School's 12th standard students and motivated them to excel in their final exams. We distributed an advanced learners Dictionary to them each as a token of appreciation."}
+      { date: "December 13, 2023", img_path: "assets/Timeline/20231213.jpeg", description: "Dr. Naveena and John Peter visited Suriyur Village Higher Secondary School's 12th standard students and motivated them to excel in their final exams. We distributed an advanced learners Dictionary to them each as a token of appreciation."}
     ]
 
 
